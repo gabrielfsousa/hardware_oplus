@@ -150,6 +150,14 @@ Return<void> BiometricsFingerprint::onFingerprintCmd(int32_t /*cmdId*/,
     return Void();
 }
 
+Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    return Void();
+}
+
 }  // namespace implementation
 }  // namespace V2_3
 }  // namespace fingerprint
