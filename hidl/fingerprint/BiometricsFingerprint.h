@@ -77,6 +77,8 @@ class BiometricsFingerprint : public IBiometricsFingerprint,
     Return<bool> isUdfps(uint32_t sensorID) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
+    Return<void> onShowUdfpsOverlay();
+    Return<void> onHideUdfpsOverlay();                                  
 
     // Methods from
     // ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback
